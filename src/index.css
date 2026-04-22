@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { box-sizing: border-box; }
+
+body {
+  background-color: #0f0f10;
+  color: #f4f4f5;
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #2e2e33; border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: #52525b; }
+
+/* Timer ring animation */
+@keyframes ringPulse {
+  0%, 100% { filter: drop-shadow(0 0 6px #7c6ff740); }
+  50%       { filter: drop-shadow(0 0 18px #7c6ff780); }
+}
+.ring-active { animation: ringPulse 2s ease-in-out infinite; }
+
+/* Drag ghost */
+.dragging { opacity: 0.4; }
