@@ -5,5 +5,5 @@ import react from '@vitejs/plugin-react'
 // e.g. if your repo is github.com/username/focusflow → base: '/focusflow/'
 export default defineConfig({
   plugins: [react()],
-  base: '/focusflow/', // ← change to your repo name
+  base: '/FocusFlow/', // ← change to your repo name
 })
